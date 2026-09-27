@@ -1,0 +1,137 @@
+/* ============================================================
+   SIGNMARK — Design Tokens & CSS Custom Properties
+   Premium Signage & Billboard Advertising Company
+   ============================================================ */
+
+/* ── Google Fonts Import ── */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+/* ── Root Tokens ── */
+:root {
+  /* Brand Colors */
+  --clr-primary:        #FF6B00;
+  --clr-primary-hover:  #FF8C33;
+  --clr-primary-dim:    rgba(255, 107, 0, 0.12);
+  --clr-primary-glow:   rgba(255, 107, 0, 0.35);
+  --clr-gold:           #C9A84C;
+  --clr-gold-dim:       rgba(201, 168, 76, 0.15);
+
+  /* Dark Theme (default) */
+  --bg-base:            #0A0A0F;
+  --bg-surface:         #12121A;
+  --bg-surface-2:       #1A1A26;
+  --bg-surface-3:       #22222E;
+  --bg-card:            #16161F;
+  --bg-card-hover:      #1E1E2C;
+  --bg-glass:           rgba(18, 18, 26, 0.75);
+  --bg-glass-border:    rgba(255, 255, 255, 0.07);
+
+  --txt-primary:        #F0EDE8;
+  --txt-secondary:      #9998A8;
+  --txt-muted:          #5C5B6E;
+  --txt-on-primary:     #FFFFFF;
+
+  --border-subtle:      rgba(255, 255, 255, 0.07);
+  --border-medium:      rgba(255, 255, 255, 0.12);
+  --border-strong:      rgba(255, 255, 255, 0.20);
+
+  --shadow-sm:          0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md:          0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-lg:          0 20px 60px rgba(0, 0, 0, 0.6);
+  --shadow-glow:        0 0 40px rgba(255, 107, 0, 0.2);
+
+  --header-blur-bg:     rgba(10, 10, 15, 0.88);
+
+  /* Typography */
+  --font-display:       'Syne', sans-serif;
+  --font-body:          'DM Sans', sans-serif;
+  --font-ui:            'Space Grotesk', sans-serif;
+
+  /* Type Scale */
+  --text-xs:    0.75rem;
+  --text-sm:    0.875rem;
+  --text-base:  1rem;
+  --text-md:    1.125rem;
+  --text-lg:    1.25rem;
+  --text-xl:    1.5rem;
+  --text-2xl:   2rem;
+  --text-3xl:   2.5rem;
+  --text-4xl:   3.25rem;
+  --text-5xl:   4.5rem;
+  --text-6xl:   6rem;
+  --text-7xl:   8rem;
+
+  /* Spacing */
+  --space-1:    0.25rem;
+  --space-2:    0.5rem;
+  --space-3:    0.75rem;
+  --space-4:    1rem;
+  --space-5:    1.25rem;
+  --space-6:    1.5rem;
+  --space-7:    1.75rem;
+  --space-8:    2rem;
+  --space-10:   2.5rem;
+  --space-12:   3rem;
+  --space-16:   4rem;
+  --space-20:   5rem;
+  --space-24:   6rem;
+  --space-32:   8rem;
+
+  /* Layout */
+  --container-max:    1400px;
+  --container-wide:   1600px;
+  --header-height:    80px;
+
+  /* Radius */
+  --radius-sm:    4px;
+  --radius-md:    8px;
+  --radius-lg:    16px;
+  --radius-xl:    24px;
+  --radius-2xl:   40px;
+  --radius-full:  9999px;
+
+  /* Transitions */
+  --ease-out:     cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:  cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast:    150ms var(--ease-out);
+  --transition-base:    250ms var(--ease-out);
+  --transition-slow:    450ms var(--ease-out);
+  --transition-slower:  700ms var(--ease-out);
+
+  /* Z-index layers */
+  --z-below:    -1;
+  --z-base:      0;
+  --z-above:     10;
+  --z-dropdown:  100;
+  --z-header:    200;
+  --z-modal:     300;
+  --z-toast:     400;
+}
+
+/* ── Light Theme Override ── */
+[data-theme="light"] {
+  --bg-base:            #F5F3EE;
+  --bg-surface:         #FFFFFF;
+  --bg-surface-2:       #F0EDE8;
+  --bg-surface-3:       #E8E4DC;
+  --bg-card:            #FFFFFF;
+  --bg-card-hover:      #FAF8F5;
+  --bg-glass:           rgba(245, 243, 238, 0.85);
+  --bg-glass-border:    rgba(0, 0, 0, 0.06);
+
+  --txt-primary:        #1A1A2E;
+  --txt-secondary:      #5A5A72;
+  --txt-muted:          #9898B0;
+  --txt-on-primary:     #FFFFFF;
+
+  --border-subtle:      rgba(0, 0, 0, 0.06);
+  --border-medium:      rgba(0, 0, 0, 0.10);
+  --border-strong:      rgba(0, 0, 0, 0.18);
+
+  --shadow-sm:          0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md:          0 8px 32px rgba(0, 0, 0, 0.10);
+  --shadow-lg:          0 20px 60px rgba(0, 0, 0, 0.12);
+  --shadow-glow:        0 0 40px rgba(255, 107, 0, 0.15);
+
+  --header-blur-bg:     rgba(245, 243, 238, 0.92);
+}
