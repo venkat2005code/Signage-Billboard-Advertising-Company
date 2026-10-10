@@ -4,7 +4,7 @@
 
 /* ── Hero Split Layout ── */
 .h2-hero {
-  min-height: 100vh;
+  min-height: 80vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: var(--header-height);
